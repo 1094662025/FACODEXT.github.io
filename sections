@@ -1,1 +1,87 @@
-s
+<h2>Sobre Nosotros</h2>
+<p>Bienvenidos a la Escuela de Fútbol, donde entrenamos a jóvenes talentos para que desarrollen sus habilidades deportivas y personales. Nos enfocamos en la disciplina, el trabajo en equipo, y el desarrollo integral de nuestros alumnos.</p>
+
+<div class="about-container">
+    <div class="mission-vision">
+        <div class="mission">
+            <h3>Misión</h3>
+            <p>Fomentar el amor por el fútbol, proporcionando un ambiente educativo que promueva la disciplina, el trabajo en equipo y el desarrollo personal de cada estudiante.</p>
+        </div>
+        <div class="vision">
+            <h3>Visión</h3>
+            <p>Convertirnos en la escuela de fútbol líder en la región, formando jugadores competitivos que contribuyan al crecimiento del deporte y a su comunidad.</p>
+        </div>
+    </div>
+    
+    <div class="what-we-do">
+        <h3>¿Qué Hacemos?</h3>
+        <p>Ofrecemos entrenamientos personalizados, competencias, y talleres para el desarrollo de habilidades tanto técnicas como tácticas. Nuestro equipo de entrenadores está altamente capacitado y comprometido con la formación integral de nuestros estudiantes.</p>
+    </div>
+</div>
+
+<h2>Nuestros Equipos</h2>
+<div class="team-grid">
+    <div class="team">
+        <h3>Equipo Infantil</h3>
+        <p>Descripción del equipo infantil...</p>
+    </div>
+    <div class="team">
+        <h3>Equipo Juvenil</h3>
+        <p>Descripción del equipo juvenil...</p>
+    </div>
+    <div class="team">
+        <h3>Equipo Senior</h3>
+        <p>Descripción del equipo senior...</p>
+    </div>
+    <!-- Agrega más equipos aquí -->
+</div>
+
+<h2>Horarios de Entrenamiento</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Día</th>
+            <th>Hora</th>
+            <th>Actividad</th>
+            <th>Entrenador</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lunes</td>
+            <td>16:00 - 17:00</td>
+            <td>Entrenamiento Infantil</td>
+            <td>Juan Pérez</td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td>17:00 - 18:00</td>
+            <td>Entrenamiento Juvenil</td>
+            <td>María López</td>
+        </tr>
+        <tr>
+            <td>Miércoles</td>
+            <td>18:00 - 19:00</td>
+            <td>Entrenamiento Senior</td>
+            <td>Carlos Martínez</td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td>16:00 - 17:00</td>
+            <td>Entrenamiento Infantil</td>
+            <td>Juan Pérez</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>17:00 - 18:00</td>
+            <td>Entrenamiento Juvenil</td>
+            <td>María López</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>10:00 - 11:00</td>
+            <td>Entrenamiento General</td>
+            <td>Todos los entrenadores</td>
+        </tr>
+    </tbody>
+</table>
