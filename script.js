@@ -1,45 +1,52 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Obtener todos los botones del menú
-    const buttons = document.querySelectorAll(".menu-btn");
+    const form = document.getElementById("contact-form");
 
-    // Función para cargar el contenido desde un archivo HTML
-    function loadContent(target) {
-        // Contenedor donde se cargará el contenido
-        const content = document.getElementById("content");
+    // Verificar que el formulario existe
+    if (form) {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevenir el envío del formulario por defecto
 
-        // Ruta al archivo HTML correspondiente
-        const url = `/sections/${target}.html`;
+            // Obtener los valores de los campos
+            const nombre = document.getElementById("nombre").value.trim();
+            const celular = document.getElementById("celular").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+            const submitButton = form.querySelector("button[type='submit']");
 
-        // Usamos fetch para obtener el archivo
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error al cargar el contenido.');
-                }
-                return response.text();
-            })
-            .then(data => {
-                // Cargamos el contenido en el contenedor
-                content.innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                content.innerHTML = '<p>No se pudo cargar el contenido. Intenta nuevamente.</p>';
-            });
-    }
+            // Validar que los campos no estén vacíos
+            if (nombre === "" || celular === "" || email === "" || mensaje === "") {
+                alert("Por favor, completa todos los campos.");
+                return;
+            }
 
-    // Añadir evento de click a cada botón
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            // Obtener la sección objetivo desde el atributo data-target
-            const target = this.getAttribute("data-target");
+            // Validar el formato del número de celular (10 dígitos)
+            const celularPattern = /^\d{10}$/;
+            if (!celularPattern.test(celular)) {
+                alert("El número de celular debe tener 10 dígitos.");
+                return;
+            }
 
-            // Cargar la sección correspondiente
-            loadContent(target);
+            // Validar el formato del correo electrónico usando una expresión regular
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Por favor, ingresa un correo electrónico válido.");
+                return;
+            }
+
+            // Deshabilitar el botón de enviar para evitar múltiples envíos
+            submitButton.disabled = true;
+
+            // Lógica para procesar los datos (por ejemplo, enviarlos a un servidor)
+            // Por ahora, solo mostramos una alerta
+            alert("Gracias por tu mensaje, " + nombre + ". Nos pondremos en contacto contigo pronto.");
+
+            // Reiniciar el formulario después del envío
+            form.reset();
+
+            // Habilitar el botón de envío nuevamente después de resetear el formulario
+            submitButton.disabled = false;
         });
-    });
-
-    // Cargar la primera sección por defecto (Inicio)
-    loadContent("inicio");
+    }
 });
+
 
