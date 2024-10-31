@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACODEXT ATLANTA FC</title>
-    <link rel="icon" href="img/icono.ico" type="image/x-icon">
+    <title>FACODEXT ATALANTA FC - Equipos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/png">
 </head>
 <body>
-    <div class="container"> <!-- Contenedor principal -->
-        <header>
-            <h1>FACODEXT ATLANTA FC</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="menu-link">Inicio</a></li>
-                    <li><a href="inicio.html" class="menu-link">Sobre Nosotros</a></li>
-                    <li><a href="equipos.html" class="menu-link">Equipos</a></li>
-                    <li><a href="horarios.html" class="menu-link">Horarios</a></li>
-                    <li><a href="noticias.html" class="menu-link">Noticias</a></li>
-                    <li><a href="contacto.html" class="menu-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo Facobext Atalanta FC" width="50">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <h2>Nuestros Equipos</h2>
-            <table>
+    <!-- Sección Equipos -->
+    <section id="equipos" class="section">
+        <h2>Nuestros Equipos</h2>
+        <p>Conoce los diferentes equipos que conforman FACODEXT ATALANTA FC, cada uno orientado a potenciar las habilidades de nuestros jugadores de acuerdo con su grupo de edad.</p>
+
+        <!-- Tabla de Equipos -->
+        <div class="table-container">
+            <table class="general-table">
                 <thead>
                     <tr>
-                        <th>Equipo</th>
+                        <th>Tipo de Equipo</th>
                         <th>Descripción</th>
                         <th>Entrenador</th>
                         <th>Edad</th>
@@ -36,37 +43,33 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Equipo Infantil</td>
-                        <td>INICIACION O DESAROLLO DE HABILIDADES BÁSICAS.</td>
+                        <td>Sub-10</td>
+                        <td>Entrenamiento básico y diversión.</td>
                         <td>Juan Pérez</td>
-                        <td>5-9 años</td>
+                        <td>8-10 años</td>
                     </tr>
                     <tr>
-                        <td>Equipo Juvenil</td>
-                        <td>DESARROLLO O FUNDAMENTACION.</td>
+                        <td>Sub-12</td>
+                        <td>Desarrollo de habilidades técnicas.</td>
                         <td>María López</td>
-                        <td>12-16 años</td>
+                        <td>10-12 años</td>
                     </tr>
                     <tr>
-                        <td>Equipo Senior</td>
-                        <td>PROFUNDIZACION O AFIANZAMIENTO.</td>
-                        <td>Carlos Martínez</td>
-                        <td>18+ años</td>
+                        <td>Sub-14</td>
+                        <td>Competencias y tácticas avanzadas.</td>
+                        <td>Carlos Gómez</td>
+                        <td>12-14 años</td>
                     </tr>
-                    <!-- Agrega más equipos aquí -->
                 </tbody>
             </table>
-        </main>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy;FACODEXT ATLANTA FC -  3202311341</p>
-        </footer>
-    </div> <!-- Fin del contenedor principal -->
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; FACODEXT ATALANTA FC - 3202311341</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

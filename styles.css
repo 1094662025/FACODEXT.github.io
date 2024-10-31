@@ -1,220 +1,298 @@
-/* RESET BÁSICO 
-   Se eliminan los márgenes y rellenos predeterminados de los elementos comunes para asegurar consistencia. */
-   body, h1, h2, h3, p, ul, table, th, td {
+/* Reset básico para eliminar márgenes y paddings predeterminados y definir el box-sizing para todos los elementos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ESTILOS GENERALES DEL BODY 
-   Se establecen las fuentes y el fondo para las partes exteriores. */
-body { 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000; /* Fondo laterales */
-    line-height: 1.6;
+/* Estilos generales para el cuerpo de la página */
+body {
+    color: #000000; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: #f4f4f9; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente principal */
 }
 
-/* CONTENEDOR PRINCIPAL 
-   Centra el contenido principal y añade bordes y sombras suaves. */
-.container {
-    width: 90%; /* Ancho flexible para adaptarse a pantallas pequeñas */
-    max-width: 1200px; /* Ancho máximo para pantallas grandes */
-    margin: 0 auto; /* Centrar la página */
-    padding: 20px;
-    background-color: #ffffff; /* Fondo dentro de la página */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(38, 190, 51, 0.1);
-    border: 2px solid rgb(155, 161, 173); /* Borde temporal para depuración */
-    display: flex; /* Usar Flexbox para organizar contenido */
-    flex-direction: column; /* Los elementos se apilan verticalmente */
-}
-
-/* ESTILOS DEL HEADER 
-   Define el estilo del encabezado, con fondo azul y texto blanco. */
+/* Encabezado y Navegación */
 header {
-    background: #007BFF;
-    color: rgb(255, 249, 249); /* Título Principal */
-    padding: 20px;
-    text-align: center; 
+    background-color: #003366; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 1rem 0; /* Espaciado superior e inferior */
 }
 
-/* PÁRRAFOS 
-   Color negro para los textos dentro de los párrafos. */
-p {
-    color: #000000;
+/* Contenedor de la navegación dentro del encabezado */
+header nav {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado del contenedor */
+    padding: 0 2rem; /* Espaciado lateral */
 }
 
-/* TÍTULO EN EL HEADER 
-   El título h1 se ajusta a una fuente grande sin margen. */
-header h1 {
-    margin: 0;
-    font-size: 2em;
+/* Lista de enlaces de navegación */
+header nav ul {
+    list-style: none; /* Quitar el estilo de lista */
+    display: flex;
+    gap: 1.5rem; /* Espaciado entre enlaces */
 }
 
-/* MENÚ DE NAVEGACIÓN 
-   Configuración del menú de navegación con links en línea. */
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+/* Estilos de los enlaces de navegación */
+header nav ul li a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: background 0.3s; /* Transición suave al pasar el ratón */
 }
 
-nav ul li {
-    display: inline-block; /* Cambia a inline-block para mayor control */
-    margin: 0 15px;
+/* Efecto hover en los enlaces de navegación */
+header nav ul li a:hover {
+    background-color: #00509e; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-/* ESTILOS DE LOS LINKS DEL MENÚ */
-.menu-link {
-    color: rgb(255, 255, 255); /* Color del menú */
-    text-decoration: none;
-    font-weight: bold;
+/* Estilo de la imagen del logo */
+.logo img {
+    max-width: 50px; /* Tamaño máximo de la imagen */
 }
 
-.menu-link:hover {
-    text-decoration: underline;
+/* Sección de introducción (Hero Section) */
+.hero {
+    background-image: url('hero-background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajuste de la imagen para cubrir toda el área */
+    background-position: center; /* Centrado de la imagen */
+    padding: 5rem 2rem; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centrado del texto */
 }
 
-/* TÍTULOS H2 Y H3 
-   Estilo para los títulos secundarios con márgenes y tamaños ajustados. */
-h2, h3 {
-    color: #000000;
-    margin-top: 20px;
+/* Contenedor del contenido de la sección de introducción */
+.hero-content {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado del contenedor */
 }
 
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
+/* Título de la sección de introducción */
+.hero h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 1rem; /* Espaciado inferior */
 }
 
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+/* Descripción de la sección de introducción */
+.hero p {
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    margin-bottom: 2rem; /* Espaciado inferior */
 }
 
-/* SECCIONES 
-   Define márgenes para las secciones del contenido. */
-section {
-    margin-top: 20px;
+/* Estilo del botón principal */
+.btn-primary {
+    background-color: #ff6b6b; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Negrita */
+    transition: background 0.3s; /* Transición suave */
 }
 
-/* LISTAS 
-   Añade margen a la izquierda para las listas no ordenadas. */
-ul {
-    margin-left: 20px;
-}
-
-/* FORMULARIOS 
-   Estilos generales para formularios, con campos y botones. */
-form {
-    margin: 20px 0;
+/* Efecto hover en el botón principal */
+.btn-primary:hover {
+    background-color: #ff4c4c; /* Color de fondo al pasar el ratón */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-input, textarea {
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
     width: 100%;
-    padding: 10px;
+    padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-/* BOTONES */
 button {
-    padding: 10px 15px;
-    background: #ffa600;
+    background-color: #003366;
     color: white;
+    padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background: #3600b3;
+    background-color: #00509e;
 }
 
-/* TABLAS 
-   Ajusta el tamaño de la tabla y añade estilo a las celdas. */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    border: 2px solid black; /* Borde negro alrededor de la tabla */
+.mision-vision {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
-/* ESTILOS PARA LAS CABECERAS DE LAS TABLAS */
-th {
-    border: 1px solid #000000;
-    padding: 10px;
-    text-align: center;
-    background-color: #007BFF;
-    color: #000000; /* Cambia el color del menú de la tabla */
+.mision, .vision {
+    flex: 1 1 45%;
+    background-color: #e0f7fa;
+    padding: 1.5rem;
+    border-radius: 8px;
 }
 
-/* ESTILOS PARA LAS CELDAS */
-td {
-    border: 1px solid #000000; /* Borde para celdas */
-    padding: 10px;
-    color: rgb(0, 0, 0); /* Color del texto */
+h3 {
+    color: #00509e;
+    margin-bottom: 0.5rem;
 }
 
-/* COLOR PARA FILAS PARES */
-tr:nth-child(even) {
-    background-color: #007BFF;
+/* Estilo general para las secciones */
+.section {
+    padding: 3rem 2rem; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centrado */
+    text-align: center; /* Centrado del texto */
 }
 
-/* PIE DE PÁGINA 
-   Estilo para el pie de página, centrado y con texto rojo oscuro. */
+/* Título de las secciones */
+.section h2 {
+    color: #00509e; /* Color del texto */
+    font-size: 2rem; /* Tamaño del texto */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+/* Párrafo en las secciones */
+.section p {
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+/* Lista de actividades */
+.activity-list {
+    list-style: none; /* Quitar el estilo de lista */
+    display: grid; /* Grid para organizar elementos */
+    gap: 1rem; /* Espaciado entre elementos */
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrado */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo de cada actividad en la lista */
+.activity-list li {
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    background-color: #e0f7fa; /* Color de fondo */
+    border-left: 4px solid #00796b; /* Línea de borde a la izquierda */
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite el ajuste de elementos */
+    gap: 1rem; /* Espaciado entre imágenes */
+    justify-content: center; /* Centrado */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+/* Contenedor de cada imagen en la galería */
+.galeria figure {
+    flex: 1 1 200px; /* Tamaño de cada imagen en proporción */
+    max-width: 250px; /* Ancho máximo */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilo de las imágenes en la galería */
+.galeria img {
+    width: 100%; /* Ancho completo */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición de transformación */
+}
+
+/* Efecto hover en las imágenes de la galería */
+.galeria img:hover {
+    transform: scale(1.05); /* Escalado al pasar el ratón */
+}
+
+/* Texto bajo las imágenes en la galería */
+figure figcaption {
+    font-size: 0.9rem; /* Tamaño de la fuente */
+    color: #555; /* Color del texto */
+    margin-top: 0.5rem; /* Espaciado superior */
+}
+
+/* Contenedor para la tabla de datos generales */
+.table-container {
+    overflow-x: auto; /* Scroll horizontal si es necesario */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+/* Tabla de datos generales */
+.general-table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Quitar separación entre celdas */
+    margin-top: 1.5rem; /* Espaciado superior */
+}
+
+/* Celdas de la tabla */
+.general-table th, .general-table td {
+    padding: 1rem; /* Espaciado interno */
+    border: 1px solid #000000; /* Borde de las celdas */
+    text-align: center; /* Texto centrado */
+    color: #000000; /* Color del texto azul */
+    font-weight: bold; /* Negrita */
+
+    
+    
+}
+
+/* Encabezado de la tabla */
+.general-table th {
+    background-color: #003366; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* Filas alternas en la tabla */
+.general-table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Color de fondo */
+}
+
+/* Efecto hover en las filas de la tabla */
+.general-table tbody tr:hover {
+    background-color: #81b8f0; /* Color de fondo al pasar el ratón */
+}
+
+/* Pie de página */
 footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #8a0909; /* Letra pie de página */
-    padding: 10px;
-    background-color: #ffffff;
+    background-color: #003366; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Texto centrado */
+    padding: 1rem 0; /* Espaciado interno */
+    font-size: 0.9rem; /* Tamaño de la fuente */
 }
 
-/* MEDIA QUERIES PARA HACER RESPONSIVE */
-
-/* Pantallas menores a 768px (tablets y móviles) */
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
-    .container {
-        width: 95%; /* Ocupa casi todo el ancho en pantallas pequeñas */
-        padding: 10px;
+    header nav ul {
+        flex-direction: column; /* Cambia a columnas */
     }
 
-    nav ul li {
-        display: block; /* El menú de navegación será vertical en móviles */
-        margin: 10px 0;
+    .activity-list {
+        grid-template-columns: 1fr; /* Una sola columna */
     }
 
-    header h1 {
-        font-size: 1.5em; /* Reduce el tamaño del título en pantallas pequeñas */
+    .hero h1 {
+        font-size: 2rem; /* Tamaño del título */
     }
 
-    h2 {
-        font-size: 1.6em; /* Ajustar tamaño de títulos */
-    }
-
-    h3 {
-        font-size: 1.3em; /* Ajustar tamaño de subtítulos */
-    }
-}
-
-/* Pantallas mayores a 1024px (escritorios grandes) */
-@media (min-width: 1024px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas grandes */
-        grid-gap: 20px;
+    .hero p {
+        font-size: 1rem; /* Tamaño de la descripción */
     }
 }

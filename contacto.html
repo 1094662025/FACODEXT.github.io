@@ -3,61 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACODEXT ATLANTA FC</title>
-    <link rel="icon" href="img/icono.ico" type="image/x-icon">
+    <title>FACODEXT ATALANTA FC - Contacto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/png">
 </head>
 <body>
-    <div class="container"> <!-- Contenedor principal -->
-        <header>
-            <h1>FACODEXT ATLANTA FC</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="menu-link">Inicio</a></li>
-                    <li><a href="inicio.html" class="menu-link">Sobre Nosotros</a></li>
-                    <li><a href="equipos.html" class="menu-link">Equipos</a></li>
-                    <li><a href="horarios.html" class="menu-link">Horarios</a></li>
-                    <li><a href="noticias.html" class="menu-link">Noticias</a></li>
-                    <li><a href="contacto.html" class="menu-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2>Contáctanos</h2>
-            <p>Para contactarnos, llena el siguiente formulario...</p>
-            <form action="#" method="POST" id="contact-form">
-                <div class="form-group">
-                    <label for="nombre">Nombres y Apellidos:</label>
-                    <input type="text" id="nombre" name="nombre" required pattern="^[a-zA-Z\s]+$" title="Solo se permiten letras y espacios.">
-                </div>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo Facobext Atalanta FC" width="50">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <div class="form-group">
-                    <label for="celular">Número de Celular:</label>
-                    <input type="tel" id="celular" name="celular" required pattern="^\d{10}$" title="Debes ingresar un número de celular válido (10 dígitos sin guiones ni espacios).">
-                </div>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Para contactarnos, llena el siguiente formulario:</p>
+        <form action="#" method="POST" id="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombres y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required pattern="^[a-zA-Z\s]+$" title="Solo se permiten letras y espacios.">
+            </div>
 
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+            <div class="form-group">
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" name="celular" required pattern="^\d{10}$" title="Debes ingresar un número de celular válido (10 dígitos sin guiones ni espacios).">
+            </div>
 
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </main>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
 
-        <footer>
-            <p>&copy;FACODEXT ATLANTA FC -  3202311341</p>
-        </footer>
-    </div> <!-- Fin del contenedor principal -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; FACODEXT ATALANTA FC - 3202311341</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
