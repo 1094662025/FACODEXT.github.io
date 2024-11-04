@@ -50,10 +50,33 @@ header nav ul li a:hover {
     background-color: #00509e; /* Color de fondo al pasar el ratón */
     border-radius: 5px; /* Bordes redondeados */
 }
+/* Estilos para centrar el contenido del menú de navegación */
+nav {
+    display: flex;
+    justify-content: space-between; /* Espacia el logo y el menú de navegación */
+    align-items: center; /* Alinea el contenido verticalmente en el centro */
+    padding: 10px 20px; /* Ajusta el espacio interior del menú */
+}
+
+/* Estilo para el contenedor del logo */
+.logo {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+}
+
+/* Estilo para el nombre del club */
+.logo .club-name {
+    font-size: 1.2em; /* Ajusta el tamaño de fuente según sea necesario */
+    font-weight: bold;
+    margin-left: 20px; /* Espacio entre el logo y el nombre */
+    color: #ffffff; /* Color del texto, ajusta según el diseño */
+}
 
 /* Estilo de la imagen del logo */
 .logo img {
     max-width: 50px; /* Tamaño máximo de la imagen */
+
+
 }
 
 /* Sección de introducción (Hero Section) */
@@ -80,8 +103,10 @@ header nav ul li a:hover {
 
 /* Descripción de la sección de introducción */
 .hero p {
+    text-align: left;
     font-size: 1.2rem; /* Tamaño de la fuente */
     margin-bottom: 2rem; /* Espaciado inferior */
+    
 }
 
 /* Estilo del botón principal */
@@ -99,67 +124,79 @@ header nav ul li a:hover {
 .btn-primary:hover {
     background-color: #ff4c4c; /* Color de fondo al pasar el ratón */
 }
-
+/* Contenedor de cada grupo de formulario */
 .form-group {
-    margin-bottom: 1rem;
-    text-align: left;
+    margin-bottom: 1rem; /* Espacio inferior entre campos del formulario */
+    text-align: left; /* Alineación del texto a la izquierda */
 }
 
+/* Estilo de las etiquetas de los campos del formulario */
 label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    display: block; /* Cada etiqueta ocupa una línea completa */
+    margin-bottom: 0.5rem; /* Espacio inferior entre etiqueta y campo */
+    font-weight: bold; /* Texto en negrita para destacar la etiqueta */
 }
 
+/* Campos de entrada de texto, teléfono y correo, además del área de texto */
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Campo ocupa todo el ancho del contenedor */
+    padding: 0.5rem; /* Espacio interno para mejor legibilidad */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados para un diseño más suave */
 }
 
+/* Estilo general para los botones */
 button {
-    background-color: #003366;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    background-color: #003366; /* Fondo azul oscuro */
+    color: white; /* Texto en blanco */
+    padding: 0.75rem 1.5rem; /* Espacio interno en el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor cambia a "mano" al pasar el ratón */
+    transition: background 0.3s; /* Transición suave al cambiar el fondo */
 }
 
+/* Efecto hover para el botón */
 button:hover {
-    background-color: #00509e;
+    background-color: #00509e; /* Fondo azul más claro */
 }
 
+/* Contenedor de la sección de misión y visión */
 .mision-vision {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
+    display: flex; /* Coloca los elementos en una línea horizontal */
+    gap: 2rem; /* Espacio entre misión y visión */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+    margin-bottom: 2rem; /* Espacio inferior para separar de otras secciones */
 }
 
+/* Estilos específicos para los contenedores de misión y visión */
 .mision, .vision {
-    flex: 1 1 45%;
-    background-color: #e0f7fa;
-    padding: 1.5rem;
-    border-radius: 8px;
+    flex: 1 1 45%; /* Cada elemento ocupa hasta el 45% del ancho del contenedor */
+    background-color: #e0f7fa; /* Fondo azul claro */
+    padding: 1.5rem; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: justify;
+    border-left: 4px solid #00796b; /* Línea de borde verde a la izquierda */
 }
 
+/* Estilo para los títulos de misión y visión */
 h3 {
-    color: #00509e;
-    margin-bottom: 0.5rem;
+    color: #000000; /* Color azul del texto */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+    text-align: left;
 }
+
 
 /* Estilo general para las secciones */
 .section {
     padding: 3rem 2rem; /* Espaciado interno */
     max-width: 1200px; /* Ancho máximo */
     margin: auto; /* Centrado */
-    text-align: center; /* Centrado del texto */
+    text-align: left; /* Centrado del texto */
+    
 }
 
 /* Título de las secciones */
@@ -167,11 +204,14 @@ h3 {
     color: #00509e; /* Color del texto */
     font-size: 2rem; /* Tamaño del texto */
     margin-bottom: 1rem; /* Espaciado inferior */
+    margin: auto; /* Centrado */
+    text-align: center;
 }
 
 /* Párrafo en las secciones */
 .section p {
     margin-bottom: 1.5rem; /* Espaciado inferior */
+    text-align: left; /* Centrado del texto */
 }
 
 /* Lista de actividades */
@@ -223,8 +263,9 @@ h3 {
 /* Texto bajo las imágenes en la galería */
 figure figcaption {
     font-size: 0.9rem; /* Tamaño de la fuente */
-    color: #555; /* Color del texto */
+    color: #000000; /* Color del texto */
     margin-top: 0.5rem; /* Espaciado superior */
+    font-weight: bold;
 }
 
 /* Contenedor para la tabla de datos generales */
@@ -246,10 +287,7 @@ figure figcaption {
     border: 1px solid #000000; /* Borde de las celdas */
     text-align: center; /* Texto centrado */
     color: #000000; /* Color del texto azul */
-    font-weight: bold; /* Negrita */
-
-    
-    
+    font-weight: bold; /* Negrita */  
 }
 
 /* Encabezado de la tabla */
@@ -295,4 +333,58 @@ footer {
     .hero p {
         font-size: 1rem; /* Tamaño de la descripción */
     }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+body {
+    padding-top: 60px; /* Ajuste para evitar que el contenido quede oculto detrás del menú */
+}
+
+/* Estilos para el Footer */
+footer {
+    display: flex; /* Activar flexbox */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: center; /* Centrar horizontalmente */
+    background-color: #003366; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 1rem 0; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+}
+
+/* Para asegurarte de que los elementos dentro del footer no se muevan de línea */
+footer p {
+    margin: 0; /* Quitar márgenes */
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    color: #ffd700; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 5px; /* Espaciado lateral entre enlaces */
+    font-weight: bold; /* Negrita */
+}
+
+
+
+/* Estilos para el contenedor de redes sociales en el pie de página */
+.social-media {
+    display: flex;
+    gap: 5px; /* Espacio entre los iconos */
+    justify-content: center; /* Centra los íconos en el footer */
+    margin-top: 5px; /* Espacio superior opcional */
+}
+
+.social-media a img {
+    width: 24px; /* Tamaño de los iconos */
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Efecto de zoom en hover */
 }

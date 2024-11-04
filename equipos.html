@@ -1,75 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Inicia el documento HTML, especificando que el contenido está en español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACODEXT ATALANTA FC - Equipos</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon-16x16.png" type="image/png">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>FACODEXT ATALANTA FC - Equipos</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza la hoja de estilos CSS externa -->
+    <link rel="icon" href="favicon-16x16.png" type="image/png"> <!-- Define el icono de la pestaña (favicon) -->
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.jpg" alt="Logo Facobext Atalanta FC" width="50">
+        <nav> <!-- Elemento de navegación -->
+            <div class="logo"> <!-- Contenedor para el logo -->
+                <img src="logo.jpg" alt="Logo Facobext Atalanta FC" width="50"> <!-- Imagen del logo -->
+                <span class="club-name">FACODEXT ATALANTA FC</span> <!-- Nombre del club -->
             </div>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre.html">Sobre Nosotros</a></li>
-                <li><a href="equipos.html">Equipos</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <ul> <!-- Lista de enlaces de navegación -->
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="sobre.html">Sobre Nosotros</a></li> <!-- Enlace a la página sobre el club -->
+                <li><a href="equipos.html">Equipos</a></li> <!-- Enlace a la página de equipos -->
+                <li><a href="horarios.html">Horarios</a></li> <!-- Enlace a la página de horarios -->
+                <li><a href="noticias.html">Noticias</a></li> <!-- Enlace a la página de noticias -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
             </ul>
         </nav>
     </header>
 
     <!-- Sección Equipos -->
-    <section id="equipos" class="section">
-        <h2>Nuestros Equipos</h2>
-        <p>Conoce los diferentes equipos que conforman FACODEXT ATALANTA FC, cada uno orientado a potenciar las habilidades de nuestros jugadores de acuerdo con su grupo de edad.</p>
-
-        <!-- Tabla de Equipos -->
-        <div class="table-container">
-            <table class="general-table">
-                <thead>
-                    <tr>
-                        <th>Tipo de Equipo</th>
-                        <th>Descripción</th>
-                        <th>Entrenador</th>
-                        <th>Edad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sub-10</td>
-                        <td>Entrenamiento básico y diversión.</td>
-                        <td>Juan Pérez</td>
-                        <td>8-10 años</td>
-                    </tr>
-                    <tr>
-                        <td>Sub-12</td>
-                        <td>Desarrollo de habilidades técnicas.</td>
-                        <td>María López</td>
-                        <td>10-12 años</td>
-                    </tr>
-                    <tr>
-                        <td>Sub-14</td>
-                        <td>Competencias y tácticas avanzadas.</td>
-                        <td>Carlos Gómez</td>
-                        <td>12-14 años</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <section id="equipos" class="section"> <!-- Sección identificada como equipos -->
+        <h2>Nuestros Equipos</h2> <!-- Título de la sección -->
+        <p>Conoce los diferentes equipos que conforman FACODEXT ATALANTA FC, cada uno orientado a potenciar las habilidades de nuestros jugadores de acuerdo con su grupo de edad.</p> <!-- Descripción general de los equipos -->
+        
+        <table class="general-table"> <!-- Tabla que muestra información sobre los equipos -->
+            <thead>
+                <tr>
+                    <th>Tipo de Equipo</th> <!-- Encabezado de columna para el tipo de equipo -->
+                    <th>Descripción</th> <!-- Encabezado de columna para la descripción del equipo -->
+                    <th>Entrenador</th> <!-- Encabezado de columna para el nombre del entrenador -->
+                    <th>Edad</th> <!-- Encabezado de columna para el rango de edad -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sub-10</td> <!-- Fila para el equipo Sub-10 -->
+                    <td>Entrenamiento básico y diversión.</td> <!-- Descripción del equipo Sub-10 -->
+                    <td>Juan Pérez</td> <!-- Entrenador del equipo Sub-10 -->
+                    <td>8-10 años</td> <!-- Rango de edad del equipo Sub-10 -->
+                </tr>
+                <tr>
+                    <td>Sub-12</td> <!-- Fila para el equipo Sub-12 -->
+                    <td>Desarrollo de habilidades técnicas.</td> <!-- Descripción del equipo Sub-12 -->
+                    <td>María López</td> <!-- Entrenador del equipo Sub-12 -->
+                    <td>10-12 años</td> <!-- Rango de edad del equipo Sub-12 -->
+                </tr>
+                <tr>
+                    <td>Sub-14</td> <!-- Fila para el equipo Sub-14 -->
+                    <td>Competencias y tácticas avanzadas.</td> <!-- Descripción del equipo Sub-14 -->
+                    <td>Carlos Gómez</td> <!-- Entrenador del equipo Sub-14 -->
+                    <td>12-14 años</td> <!-- Rango de edad del equipo Sub-14 -->
+                </tr>
+            </tbody>
+        </table>
     </section>
-
+    
     <!-- Footer -->
-    <footer>
-        <p>&copy; FACODEXT ATALANTA FC - 3202311341</p>
+    <footer> <!-- Pie de página -->
+        <p>&copy; FACODEXT ATALANTA FC - 3202311341</p> <!-- Información de copyright y número de contacto -->
+        <a href="tel:3202311341">Llámanos</a> | <a href="mailto:Atalantafclub@gmail.com">Correo</a> <!-- Enlaces para llamar y enviar correo -->
+        <div class="social-media"> <!-- Contenedor para los enlaces de redes sociales -->
+            <a href="https://www.facebook.com/newatalantafc" target="_blank"> <!-- Enlace a la página de Facebook -->
+                <img src="facebook.png" alt="Facebook" width="24"> <!-- Icono de Facebook -->
+            </a>
+            <a href="https://www.instagram.com/facodexatalantafc/" target="_blank"> <!-- Enlace a la página de Instagram -->
+                <img src="instagram.png" alt="Instagram" width="24"> <!-- Icono de Instagram -->
+            </a>
+        </div>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Enlaza el archivo JavaScript externo -->
 </body>
 </html>
+
+
+
